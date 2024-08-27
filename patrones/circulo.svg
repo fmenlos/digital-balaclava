@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="circulo.svg"
+   inkscape:export-filename="circulo.png"
+   inkscape:export-xdpi="32.774193"
+   inkscape:export-ydpi="32.774193"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     showgrid="true"
+     inkscape:zoom="2.5664393"
+     inkscape:cx="154.68903"
+     inkscape:cy="338.4066"
+     inkscape:window-width="1600"
+     inkscape:window-height="831"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#00000000">
+    <inkscape:grid
+       id="grid6"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.132292;stroke-opacity:1"
+       id="rect1"
+       width="53.338833"
+       height="38.544506"
+       x="9.0165834"
+       y="65.758629" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path1"
+       cx="42.657558"
+       cy="43.971985"
+       r="3"
+       inkscape:export-filename="circulo.png"
+       inkscape:export-xdpi="32.774193"
+       inkscape:export-ydpi="32.774193" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-5"
+       cx="42.657558"
+       cy="43.971985"
+       r="5" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-5-0"
+       cx="42.657558"
+       cy="43.971985"
+       r="7" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-5-0-0"
+       cx="42.657558"
+       cy="43.971985"
+       r="9" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-5-0-0-1"
+       cx="42.657558"
+       cy="43.971985"
+       r="15" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-5-0-0-1-2"
+       cx="42.657558"
+       cy="43.971985"
+       r="11" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-5-0-0-1-2-7"
+       cx="42.657558"
+       cy="43.971985"
+       r="13" />
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-53"
+       cx="28.480568"
+       cy="85.655754"
+       r="3"
+       inkscape:export-filename="circulo_blanco.png"
+       inkscape:export-xdpi="32.774193"
+       inkscape:export-ydpi="32.774193" />
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-5-0-6"
+       cx="28.480568"
+       cy="85.655754"
+       r="7" />
+    <ellipse
+       style="fill:none;stroke:#ffffff;stroke-width:7.38522;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-5-0-0-1-2-1"
+       cx="28.480568"
+       cy="89.893867"
+       inkscape:export-filename="circulo_blanco.png"
+       inkscape:export-xdpi="32.774193"
+       inkscape:export-ydpi="32.774193"
+       rx="10.557387"
+       ry="14.795499" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:7.58600053;stroke-opacity:1;stroke-dasharray:none"
+       d="M 41.234946,96.131682 C 61.73697,73.556898 61.73697,73.556898 61.73697,73.556898"
+       id="path3"
+       inkscape:export-filename="linea_oblicua_blanca.png"
+       inkscape:export-xdpi="32.774193"
+       inkscape:export-ydpi="32.774193" />
+  </g>
+</svg>

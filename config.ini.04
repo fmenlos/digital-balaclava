@@ -1,0 +1,106 @@
+[general.display]
+;dimensiones display disponible (las propoorciona el fabricante )
+;---------------
+;estas son las dimensiones de un display OLED de ideaspark
+;en px
+;x = 96
+;y = 64
+;en mm
+;ancho_display = 25
+;alto_display = 18
+;colores=64
+
+;estas son las dimensiones de un display epaper 
+;https://es.aliexpress.com/item/1005007016350421.html?spm=a2g0o.productlist.main.5.484571469eSIk0&algo_pvid=34248218-0ea1-4377-8af9-f8dde5cc1e9f&algo_exp_id=34248218-0ea1-4377-8af9-f8dde5cc1e9f-2&pdp_npi=4%40dis%21EUR%2137.83%2123.83%21%21%2140.05%2125.23%21%402103919917219142558882035ec43f%2112000039082698780%21sea%21ES%21170088284%21&curPageLogUid=Lw0h6V9q63me&utparam-url=scene%3Asearch%7Cquery_from%3A
+;en px
+x = 250
+y = 122
+;en mm
+ancho_display = 50
+alto_display = 22
+colores=2
+
+;estas son las dimensiones de un display epaper 
+;https://es.aliexpress.com/item/1005005672061297.html?algo_pvid=1431dc7c-018a-4785-b57a-c602668f05aa&aem_p4p_detail=202407250630481175850697965970000098724&algo_exp_id=1431dc7c-018a-4785-b57a-c602668f05aa-7&pdp_npi=4%40dis%21EUR%2115.72%2114.15%21%21%21121.04%21108.94%21%40210391a017219142480878910ec273%2112000033965193600%21sea%21ES%21170088284%21&curPageLogUid=yGAjXvtfGIFg&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=202407250630481175850697965970000098724_2
+;en px
+;x = 296
+;y = 128
+;en mm
+;ancho_display = 67
+;alto_display = 29
+;colores=3
+
+;dimensiones medias en mm de una cara humana (no se distingue entre generos, etnias ni edades)
+ancho_cara_media = 140
+alto_cara_media = 190
+
+;------------------------------------------------
+;PUBLISHER: Se conecta a la primera webcam disponible y comienza a publicar en localhost:5555
+;------------------------------------------------
+[camera_publisher]
+bind = tcp://*:5555
+;en segundos
+retardo_entre_capturas = 0.5
+high_water = 2
+;cuantas capturas se realizaran, -1 es infinito (hasta ctrl+c)
+repeticiones = -1
+
+;------------------------------------------------
+;PROCESSOR: Se suscribe al canal de imagenes y abre un canal propio para que otros pueda suscribirse a sus resultados
+;------------------------------------------------
+[processor]
+sub = tcp://localhost:5555
+bind = tcp://*:5566
+high_water = 2
+patron = patrones/linea_oblicua_blanca.png
+;cuantas ciclos de procesamiento se realizaran, -1 es infinito (hasta ctrl+c)
+repeticiones = -1
+
+;------------------------------------------------
+;DISPLAY: Se conecta a los resultados de procesador y los muestra
+;------------------------------------------------
+[display_subscriber]
+sub = tcp://localhost:5566
+
+;------------------------------------------------
+;DISPLAY SIMULADO: Se conecta a los resultados de procesador y a canal de imagenes. Genera imagenes simuladas para realizar la validación del sistema
+;------------------------------------------------
+[simulated_display_subscriber]
+sub1 = tcp://localhost:5555
+sub2 = tcp://localhost:5566
+
+; numero de sets de imagenes a generar para cada humano
+repeticiones = 1
+
+;carpetas de origen y destino 
+carpeta_origen = humanos
+carpeta_destino = humanos_test
+
+;los humanos utilizados son muestras obtenidas gratuitamente de Generated.Photos
+;las imagenes tienen fondo transparente y la cabeza esta aproximadamente centrada en estas coordenadas en pixels
+inicio_zona_cabeza_x = 100
+inicio_zona_cabeza_y = 45
+final_zona_cabeza_x = 405
+final_zona_cabeza_y = 220
+
+; porcentajes de ubicacion del patron en la imagen generada
+offset_patron_x = 0.51
+offset_patron_y = 0.92
+salto_patron_y = 40
+
+; desde 1, se decrementa en "deltas" hasta llegar stop
+factor_distancia_stop = 0.30
+factor_distancia_delta = 0.35
+
+
+;------------------------------------------------
+;SIMULATED PUBLISHER: Recorre una carpeta de imagenes y las publica en localhost:5555
+;------------------------------------------------
+[simulated_camera_publisher]
+bind = tcp://*:5555
+;en segundos
+retardo_entre_capturas = 0.5
+high_water = 2
+;cuantas capturas se realizaran, -1 es infinito (hasta ctrl+c)
+repeticiones = -1
+carpeta_origen = fondos_simulados
